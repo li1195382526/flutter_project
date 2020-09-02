@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child:  WebView(
-            initialUrl: "https://f.epanel.cn",
+            initialUrl: "https://f.epanel.cn/h5/",
             //JS执行模式 是否允许JS执行
             javascriptMode: JavascriptMode.unrestricted,
       ),
@@ -65,19 +65,19 @@ class _MyHomePageState extends State<MyHomePage> {
         )
       ),
 //      bottomNavigationBar:BottomNavigationWidget(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-            Navigator.of(context)
-                .push(new MaterialPageRoute(builder: (_) {
-              return new Browser(
-                url: "https://f.epanel.cn",
-                title: "云调查APP",
-              );
-            }));
-          },
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {
+      //       Navigator.of(context)
+      //           .push(new MaterialPageRoute(builder: (_) {
+      //         return new Browser(
+      //           url: "https://f.epanel.cn",
+      //           title: "云调查APP",
+      //         );
+      //       }));
+      //     },
+      //   tooltip: 'Increment',
+      //   child: Icon(Icons.add),
+      // ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
